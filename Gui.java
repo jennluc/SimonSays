@@ -1,11 +1,18 @@
-import javax.swing;
-import java.awt;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
+import java.util.*;
 
-public class GuiFile extends JFrame {
+
+public class Gui extends JFrame {
 
     public static void main (String[] args)
     {
-        MyGUI theGUI = new MyGUI();
+        JFrame frame = new JFrame("My First GUI");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300,300);
+        JButton button = new JButton("Press");
+        frame.getContentPane().add(button); // Adds Button to content pane of frame
+        frame.setVisible(true);
     }
 }
